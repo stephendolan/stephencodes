@@ -1,10 +1,5 @@
 <template>
-  <Layout>
-    <header class="header">
-      <h1 v-html="$page.metadata.siteName" />
-      <h2 v-html="$page.metadata.siteDescription" />
-    </header>
-  </Layout>
+  <Layout> </Layout>
 </template>
 
 <page-query>
@@ -15,3 +10,14 @@ query {
     }
 }
 </page-query>
+
+<style scoped>
+#app {
+  height: 100vh;
+  background-image: url("~@/assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+</style>

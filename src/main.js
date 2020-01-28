@@ -6,9 +6,12 @@ import DefaultLayout from "~/layouts/Default.vue";
 import Buefy from "buefy";
 import "buefy/dist/buefy.css";
 
+import VueLazyLoad from "vue-lazyload";
+
 import "prismjs/themes/prism-tomorrow.css";
 
 export default function(Vue, { router, head, isClient }) {
   Vue.use(Buefy);
+  Vue.use(VueLazyLoad);
   Vue.component("Layout", DefaultLayout);
 }

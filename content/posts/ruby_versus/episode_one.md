@@ -1,9 +1,10 @@
 ---
-date: "2019-05-04"
+date: "2018-11-29"
 title: "Ruby Versus | Episode 1 | Library Folder Structure"
 description: "How do you structure your libraries in Ruby? In this first installment of Ruby Versus, I'll present two options I've used with the pros and cons of each."
-slug: "ruby-versus-episode-one-library-folder-structure"
-image: "./episode_one.jpg"
+slug: "ruby-library-folder-structure"
+featured: true
+tags: [ruby]
 ---
 
 ## Background
@@ -134,8 +135,6 @@ We can define `Vehicle` as a module instead of a class, which I believe communic
 
 While this structure functionally serves the same role, it is generally not what you will find recommended by the community and other libraries.
 
-## The Verdict
-
-So, which method do you prefer? Make sure that you leave a comment at the bottom of this post if you think there's an important method that I've left out, or if I've missed an important pro or con for an option.
+## My Verdict
 
 While historically I have always used Option 1, after discussing the pros and cons with Chris Oliver at [GoRails](https://gorails.com), I'm certainly going to be giving Option 2 a go to see how well it works in my Ruby on Rails applications.

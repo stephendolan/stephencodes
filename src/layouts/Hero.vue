@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar />
+    <Navbar :isHero="true" />
     <slot />
   </div>
 </template>

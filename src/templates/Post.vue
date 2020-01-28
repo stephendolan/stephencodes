@@ -1,19 +1,22 @@
 <template>
   <Layout>
-    <br />
-    <g-link to="/" class="link">&larr; Go Back</g-link>
+    <div class="card article">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content has-text-centered">
+            <p class="title article-title">{{ $page.post.title }}</p>
 
-    <div class="post-title">
-      <h1>{{ $page.post.title }}</h1>
-      <p class="post-date">
-        {{ $page.post.date }} | {{ $page.post.timeToRead }} min read
-      </p>
-    </div>
+            <div class="tags has-addons level-item">
+              <span class="tag is-rounded is-info">Stephen Dolan</span>
+              <span class="tag is-rounded">{{ $page.post.date }}</span>
+            </div>
+          </div>
+        </div>
 
-    <g-image :src="$page.post.image" />
-
-    <div class="post-content">
-      <p v-html="$page.post.content" />
+        <div class="content">
+          <p v-html="$page.post.content" />
+        </div>
+      </div>
     </div>
   </Layout>
 </template>
@@ -25,8 +28,13 @@ query Post ($path: String!) {
     title
     content
     date (format: "MMMM D, YYYY")
-    image (width: 750, height: 200, quality: 75, blur: 50)
     timeToRead
   }
 }
 </page-query>
+
+<style scoped>
+span.icon {
+  color: black;
+}
+</style>

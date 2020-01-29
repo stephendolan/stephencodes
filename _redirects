@@ -3,7 +3,6 @@
 # Redirect domain aliases to primary domain
 https://stephendolan.dev/* https://stephencodes.com/:splat 301!
 https://www.stephendolan.dev/* https://stephencodes.com/:splat 301!
-https://www.stephencodes.com/* https://stephencodes.com/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://stephencodes.netlify.com/* https://stephencodes.com/:splat 301!

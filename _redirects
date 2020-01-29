@@ -1,6 +1,7 @@
 # Redirect domain aliases to primary domain
-https://stephendolan.dev/* https://stephencodes.com/:splat 301!
-http://stephendolan.dev/* https://stephencodes.com/:splat 301!
+# Turning off for now
+# https://stephendolan.dev/* https://stephencodes.com/:splat 301!
+# http://stephendolan.dev/* https://stephencodes.com/:splat 301!
 
-https://www.stephendolan.dev/* https://stephencodes.com/:splat 301!
-http://www.stephendolan.dev/* https://stephencodes.com/:splat 301!
+# https://www.stephendolan.dev/* https://stephencodes.com/:splat 301!
+# http://www.stephendolan.dev/* https://stephencodes.com/:splat 301!

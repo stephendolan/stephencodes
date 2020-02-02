@@ -9,8 +9,7 @@
             href="mailto:stephen@stephencodes.com"
             target="_blank"
             class="button is-large is-info"
-            >Let's chat!</a
-          >
+          >Let's chat!</a>
         </div>
       </div>
     </div>

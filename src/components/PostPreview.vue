@@ -1,12 +1,12 @@
 <template>
-  <g-link :to="post.path" class="box">
+  <div class="box">
     <div class="columns">
       <div class="column">
         <p class="title">{{ post.title }}</p>
 
-        <p>{{ post.description}}</p>
+        <p>{{ post.description }}</p>
 
-        <g-link :to="post.path" class="button is-link">
+        <g-link :to="post.path" class="button is-link is-fullwidth-mobile">
           <span class="icon">
             <svg
               aria-hidden="true"
@@ -28,9 +28,7 @@
         </g-link>
       </div>
 
-      <div class="column is-narrow">
-        <div></div>
-
+      <div class="column is-narrow is-hidden-touch">
         <div>
           <div class="field is-grouped is-grouped-multiline">
             <div class="control" v-for="tag in post.tags" :key="tag">
@@ -40,7 +38,7 @@
         </div>
       </div>
     </div>
-  </g-link>
+  </div>
 </template>
 
 <script>
@@ -49,12 +47,19 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .button {
   margin-top: 20px;
+
+  span.icon {
+    padding-right: 4px;
+  }
 }
 
-span.icon {
-  padding: 4px;
+@media screen and (max-width: 768px), print {
+  .button.is-fullwidth-mobile {
+    display: flex;
+    width: 100%;
+  }
 }
 </style>

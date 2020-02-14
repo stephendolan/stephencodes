@@ -9,6 +9,14 @@ module.exports = {
         typeName: "Post",
         route: "/blog/:slug"
       }
+    },
+    {
+      use: "gridsome-plugin-gtm",
+      options: {
+        id: "GTM-TS6HDHW",
+        enabled: true,
+        debug: true
+      }
     }
   ],
   transformers: {

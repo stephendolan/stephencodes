@@ -4,6 +4,7 @@ title: "Gmail as a Getting Things Done Inbox"
 description: "How to effectively use Gmail in a Getting Things Done workflow."
 slug: "gmail-as-a-gtd-inbox"
 tags: [gtd, productivity, gmail]
+featured: false
 ---
 
 - Summary

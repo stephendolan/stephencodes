@@ -4,6 +4,7 @@ title: "Ruby Versus | Episode 1 | Library Folder Structure"
 description: "How do you structure your libraries in Ruby? In this first installment of Ruby Versus, I'll present two options I've used with the pros and cons of each."
 slug: "ruby-library-folder-structure"
 tags: [ruby]
+featured: false
 ---
 
 ## Background

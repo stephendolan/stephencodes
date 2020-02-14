@@ -4,6 +4,7 @@ title: "Quicker Context Switching with Tmuxinator"
 description: "The initial project setup necessary to open up a code repository can be quite complex. Tmuxinator is handy little tool that helps with your Tmux sessions and automates the initial setup of windows and commands that you run for any given project."
 slug: "quicker-context-switching-with-tmuxinator"
 tags: [programming]
+featured: false
 ---
 
 Programming is a weird profession. Because our careers are built by generating products or services out of thin air from computers that we have access to every minute of every day, it is incredibly easy to go from working on one product in the morning at the office to a completely separate product in the evening at home. It is just as easy to switch from one hobby product to another within the span of a few minutes.

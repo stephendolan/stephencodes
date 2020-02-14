@@ -28,7 +28,7 @@ export default {
 
 <page-query>
 query {
-  allPost(sort: [{ by: "featured" }, { by: "date}" }]) {
+  allPost(sort: [{ by: "featured" }, { by: "date" }]) {
     totalCount
     edges {
       node {

@@ -29,6 +29,11 @@ query {
 import Layout from "@/layouts/Hero";
 
 export default {
+  name: "Home",
+  metaInfo: {
+    title: "Stephen Dolan",
+    titleTemplate: null
+  },
   data() {
     return {
       imgObj: {

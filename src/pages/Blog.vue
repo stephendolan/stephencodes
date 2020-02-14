@@ -16,6 +16,10 @@
 import PostPreview from "@/components/PostPreview";
 
 export default {
+  name: "Blog",
+  metaInfo: {
+    title: "Blog"
+  },
   components: {
     PostPreview
   }

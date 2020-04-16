@@ -2,7 +2,7 @@
   <nav
     class="navbar is-spaced"
     :class="{
-      'is-hero is-fixed-top has-text-white': isHero
+      'is-hero is-fixed-top has-text-white': isHero,
     }"
     role="navigation"
     aria-label="main navigation"
@@ -15,7 +15,7 @@
         class="navbar-burger"
         :class="{
           'is-active': mobileExpanded,
-          'has-text-white': isHero
+          'has-text-white': isHero,
         }"
         @click="toggleMobileMenu"
       >
@@ -45,15 +45,15 @@ export default {
   components: { BrandLink, BlogLink, GitLabLink, GitHubLink },
   data() {
     return {
-      mobileExpanded: false
+      mobileExpanded: false,
     };
   },
   methods: {
     toggleMobileMenu() {
       this.mobileExpanded = !this.mobileExpanded;
-    }
+    },
   },
-  props: ["isHero"]
+  props: ["isHero"],
 };
 </script>
 

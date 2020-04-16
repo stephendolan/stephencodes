@@ -7,24 +7,24 @@ module.exports = {
       options: {
         path: "content/posts/*.md",
         typeName: "Post",
-        route: "/blog/:slug"
-      }
+        route: "/blog/:slug",
+      },
     },
     {
       use: "gridsome-plugin-gtm",
       options: {
         id: "GTM-TS6HDHW",
         enabled: true,
-        debug: true
-      }
-    }
+        debug: true,
+      },
+    },
   ],
   transformers: {
     remark: {
       autolinkHeadings: false,
       externalLinksTarget: "_blank",
       externalLinksRel: ["nofollow", "noopener", "noreferrer"],
-      plugins: ["@gridsome/remark-prismjs"]
-    }
-  }
+      plugins: ["@gridsome/remark-prismjs"],
+    },
+  },
 };

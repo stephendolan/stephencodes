@@ -38,6 +38,6 @@ span.icon {
 
 <script>
 export default {
-  props: ["useWhiteText"]
+  props: ["useWhiteText"],
 };
 </script>

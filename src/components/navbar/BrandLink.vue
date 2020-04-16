@@ -18,6 +18,6 @@ query {
 
 <script>
 export default {
-  props: ["useWhiteText"]
+  props: ["useWhiteText"],
 };
 </script>

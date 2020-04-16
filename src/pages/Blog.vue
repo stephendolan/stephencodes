@@ -6,7 +6,11 @@
       </div>
 
       <div class="section">
-        <PostPreview v-for="edge in $page.allPost.edges" :key="edge.node.id" :post="edge.node" />
+        <PostPreview
+          v-for="edge in $page.allPost.edges"
+          :key="edge.node.id"
+          :post="edge.node"
+        />
       </div>
     </section>
   </Layout>
@@ -18,11 +22,11 @@ import PostPreview from "@/components/PostPreview";
 export default {
   name: "Blog",
   metaInfo: {
-    title: "Blog"
+    title: "Blog",
   },
   components: {
-    PostPreview
-  }
+    PostPreview,
+  },
 };
 </script>
 

@@ -9,7 +9,8 @@
             href="mailto:stephen@stephencodes.com"
             target="_blank"
             class="button is-large is-info"
-          >Let's chat!</a>
+            >Let's chat!</a
+          >
         </div>
       </div>
     </div>
@@ -32,7 +33,7 @@ export default {
   name: "Home",
   metaInfo: {
     title: "Stephen Dolan",
-    titleTemplate: null
+    titleTemplate: null,
   },
   data() {
     return {
@@ -40,13 +41,13 @@ export default {
         src:
           "https://images.unsplash.com/photo-1536613562388-150f1185accb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
         loading:
-          "https://images.unsplash.com/photo-1536613562388-150f1185accb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=20"
-      }
+          "https://images.unsplash.com/photo-1536613562388-150f1185accb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=20",
+      },
     };
   },
   components: {
-    Layout
-  }
+    Layout,
+  },
 };
 </script>
 

@@ -28,7 +28,6 @@
     <div class="navbar-menu" :class="{ 'is-active': mobileExpanded }">
       <div class="navbar-end">
         <BlogLink :useWhiteText="isHero" />
-        <GitLabLink :useWhiteText="isHero" />
         <GitHubLink :useWhiteText="isHero" />
       </div>
     </div>
@@ -36,33 +35,33 @@
 </template>
 
 <script>
-import BrandLink from "@/components/navbar/BrandLink";
-import BlogLink from "@/components/navbar/BlogLink";
-import GitHubLink from "@/components/navbar/GitHubLink";
-import GitLabLink from "@/components/navbar/GitLabLink";
+  import BrandLink from "@/components/navbar/BrandLink";
+  import BlogLink from "@/components/navbar/BlogLink";
+  import GitHubLink from "@/components/navbar/GitHubLink";
+  import GitLabLink from "@/components/navbar/GitLabLink";
 
-export default {
-  components: { BrandLink, BlogLink, GitLabLink, GitHubLink },
-  data() {
-    return {
-      mobileExpanded: false,
-    };
-  },
-  methods: {
-    toggleMobileMenu() {
-      this.mobileExpanded = !this.mobileExpanded;
+  export default {
+    components: { BrandLink, BlogLink, GitLabLink, GitHubLink },
+    data() {
+      return {
+        mobileExpanded: false,
+      };
     },
-  },
-  props: ["isHero"],
-};
+    methods: {
+      toggleMobileMenu() {
+        this.mobileExpanded = !this.mobileExpanded;
+      },
+    },
+    props: ["isHero"],
+  };
 </script>
 
 <style lang="scss" scoped>
-nav.is-hero {
-  background: transparent;
-
-  .navbar-menu {
+  nav.is-hero {
     background: transparent;
+
+    .navbar-menu {
+      background: transparent;
+    }
   }
-}
 </style>

@@ -38,10 +38,9 @@
   import BrandLink from "@/components/navbar/BrandLink";
   import BlogLink from "@/components/navbar/BlogLink";
   import GitHubLink from "@/components/navbar/GitHubLink";
-  import GitLabLink from "@/components/navbar/GitLabLink";
 
   export default {
-    components: { BrandLink, BlogLink, GitLabLink, GitHubLink },
+    components: { BrandLink, BlogLink, GitHubLink },
     data() {
       return {
         mobileExpanded: false,

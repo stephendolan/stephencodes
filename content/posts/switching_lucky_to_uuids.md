@@ -62,7 +62,7 @@ Crystal is a [typed language](https://en.wikipedia.org/wiki/Type_system), so we 
 
 Rather than running through file-by-file, which may become out of date as the Lucky CLI and framework evolve, here are the two things to search for that you'll need to replace in your generated application:
 
-### `Int64`
+### Int64
 
 The only occurrences of this type in your app should be for typing `User.id`, and the switch to UUIDs is as simple as replacing `Int64` with `UUID`. I'll provide my changes from the `PasswordResets::NewPage` as an example.
 
@@ -88,7 +88,7 @@ class PasswordResets::NewPage < AuthLayout
 end
 ```
 
-### `to_i64`
+### .to_i64
 
 This is the last change we need to make. We've covered converting type expectations in the previous section, and now we'll convert the code that provides the `User` ID.
 

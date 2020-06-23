@@ -20,7 +20,7 @@ The first action to take is straightforward, but requires a few steps.
 We need to add the `pgcrypto` extension to our database _before_ the user model is created. To do that, we'll rename that migration and insert a new one before it:
 
 ```shell
-mv 00000000000001_create_users.cr 00000000000001_create_users.cr
+mv 00000000000001_create_users.cr 00000000000002_create_users.cr
 ```
 
 I also went ahead and manually created the migration for adding the extension:

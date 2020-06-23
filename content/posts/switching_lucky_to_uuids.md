@@ -27,7 +27,7 @@ I also went ahead and manually created the migration for adding the extension:
 
 Add this content to that file to create the extension in your database and remove it on rollback:
 
-```cr
+```crystal
 class EnablePgcrypto::V00000000000001 < Avram::Migrator::Migration::V1
   def migrate
     execute "CREATE EXTENSION IF NOT EXISTS pgcrypto"
@@ -43,7 +43,7 @@ end
 
 You can enable this on only specific modules, but if you're planning on using UUIDs for all of your application's records, go ahead and add this to `src/models/base_model.cr`:
 
-```cr
+```crystal
 macro default_columns
   primary_key id : UUID
   timestamps
@@ -64,7 +64,7 @@ The only occurrences of this type in your app should be for typing `User.id`, an
 
 Before:
 
-```cr
+```crystal
 class PasswordResets::NewPage < AuthLayout
   needs operation : ResetPassword
   needs user_id : Int64
@@ -75,7 +75,7 @@ end
 
 After:
 
-```cr
+```crystal
 class PasswordResets::NewPage < AuthLayout
   needs operation : ResetPassword
   needs user_id : UUID
@@ -94,13 +94,13 @@ The change to make to callers of `to_i64` is to strip off `to_i64`, and pass eve
 
 Before:
 
-```cr
+```crystal
 html NewPage, operation: operation, user_id: user_id.to_i64`
 ```
 
 After:
 
-```cr
+```crystal
 html NewPage, operation: operation, user_id: UUID.new(user_id)
 ```
 
@@ -108,13 +108,13 @@ html NewPage, operation: operation, user_id: UUID.new(user_id)
 
 Before:
 
-```cr
+```crystal
 payload["user_id"].to_s.to_i64
 ```
 
 After:
 
-```cr
+```crystal
 UUID.new(payload["user_id"].to_s)
 ```
 

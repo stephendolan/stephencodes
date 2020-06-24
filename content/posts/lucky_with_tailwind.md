@@ -38,7 +38,7 @@ Yep, you read that right! The Lucky team is all about not re-inventing the wheel
 
 That said, let's add the necessary TailwindCSS items to `webpack.mix.js` based on the [TailwindCSS Documentation](https://tailwindcss.com/docs/installation/#laravel-mix).
 
-We need to define a `tailwindcss` variable to configure :
+We need to define a `tailwindcss` variable to use:
 
 ```js
 const tailwindcss = require("tailwindcss");

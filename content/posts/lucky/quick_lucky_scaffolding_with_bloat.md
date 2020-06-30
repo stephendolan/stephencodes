@@ -15,7 +15,7 @@ I also noticed the Rails community solving this painpoint with sites like [Rails
 
 ## The Bloat Gem
 
-To that end, I created the [`bloat`](https://github.com/stephendolan/bloat) gem, which is essentially just a wrapper around [Thor's](http://whatisthor.com) `apply` method. It allows you to execute templates from [RailsBytes](https://railsbytes.com) or any other template repository with Thor commands within any directory structure.
+To that end, I created the [`bloat`](https://github.com/stephendolan/bloat) gem (https://github.com/stephendolan/bloat), which is essentially just a wrapper around [Thor's](http://whatisthor.com) `apply` method. It allows you to execute templates from [RailsBytes](https://railsbytes.com) or any other template repository with Thor commands within any directory structure.
 
 ## Example: TailwindCSS in Lucky
 

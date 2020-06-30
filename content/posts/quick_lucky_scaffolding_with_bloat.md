@@ -11,7 +11,7 @@ tags: [crystal, lucky, luckyframework]
 
 In newer tools with less fleshed out community tooling, adding libraries can be a pain. For example, when I first got started with the excellent [Lucky web framework](https://luckyframework.org), I had a hard time getting TailwindCSS set up so that I could scaffold a simple app and see how it worked.
 
-I also noticed the Rails community solving this painpoint with sites like RailsBytes[https://railsbytes.com], and yearned for something similar that I could use in **any** application and **any** framework.
+I also noticed the Rails community solving this painpoint with sites like [RailsBytes](https://railsbytes.com), and yearned for something similar that I could use in **any** application and **any** framework.
 
 ## The Bloat Gem
 

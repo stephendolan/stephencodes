@@ -14,6 +14,10 @@ tags: [crystal, lucky, luckyframework, stimulus, stimulusjs]
 
 Let's get these two working together for a super productive web developer experience!
 
+### Shortcut
+
+If you want an even quicker way to set up StimulusJS, go check out my [post on the Bloat gem](https://stephencodes.com/blog/quick-lucky-addons-with-the-bloat-gem/) for a way to get up and running in three commands!
+
 ## Setup
 
 All of these instructions can be found in their generic form in the [StimulusJS Documentation](https://stimulusjs.org/handbook/installing).

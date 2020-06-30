@@ -14,6 +14,10 @@ tags: [crystal, lucky, luckyframework, tailwindcss, tailwind]
 
 Let's get these two working together for a super productive web developer experience!
 
+### Shortcut
+
+If you want an even quicker way to set up TailwindCSS, go check out my [post on the Bloat gem](https://stephencodes.com/blog/quick-lucky-addons-with-the-bloat-gem/) for a way to get up and running in three commands!
+
 ## Packages
 
 All you need to do to get started is install Tailwind!

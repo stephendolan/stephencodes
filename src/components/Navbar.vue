@@ -35,32 +35,32 @@
 </template>
 
 <script>
-  import BrandLink from "@/components/navbar/BrandLink";
-  import BlogLink from "@/components/navbar/BlogLink";
-  import GitHubLink from "@/components/navbar/GitHubLink";
+import BrandLink from "@/components/navbar/BrandLink";
+import BlogLink from "@/components/navbar/BlogLink";
+import GitHubLink from "@/components/navbar/GitHubLink";
 
-  export default {
-    components: { BrandLink, BlogLink, GitHubLink },
-    data() {
-      return {
-        mobileExpanded: false,
-      };
+export default {
+  components: { BrandLink, BlogLink, GitHubLink },
+  data() {
+    return {
+      mobileExpanded: false,
+    };
+  },
+  methods: {
+    toggleMobileMenu() {
+      this.mobileExpanded = !this.mobileExpanded;
     },
-    methods: {
-      toggleMobileMenu() {
-        this.mobileExpanded = !this.mobileExpanded;
-      },
-    },
-    props: ["isHero"],
-  };
+  },
+  props: ["isHero"],
+};
 </script>
 
 <style lang="scss" scoped>
-  nav.is-hero {
-    background: transparent;
+nav.is-hero {
+  background: transparent;
 
-    .navbar-menu {
-      background: transparent;
-    }
+  .navbar-menu {
+    background: transparent;
   }
+}
 </style>

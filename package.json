@@ -9,7 +9,7 @@
   "dependencies": {
     "@gridsome/remark-prismjs": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.3",
     "buefy": "^0.9.3",
     "gridsome": "^0.7.21",
     "gridsome-plugin-gtm": "^0.1.1",

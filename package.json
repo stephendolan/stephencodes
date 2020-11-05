@@ -11,7 +11,7 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.3",
     "buefy": "^0.9.4",
-    "gridsome": "^0.7.21",
+    "gridsome": "^0.7.22",
     "gridsome-plugin-gtm": "^0.1.1",
     "vue-lazyload": "^1.3.3"
   },

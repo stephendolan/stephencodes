@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://stephencodes.com/notes/*"
+  to = "https://publish.obsidian.md/serve?url=stephencodes.com/notes/:splat"
+  status = 200
+  force = true
